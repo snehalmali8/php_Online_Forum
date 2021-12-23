@@ -3,7 +3,7 @@ $showAlert = false;
 $showError = false;
 $method = $_SERVER["REQUEST_METHOD"];
 if($method == "POST"){
-    include "partials/_dbconnect.php";
+    include "_dbconnect.php";
     $mail = $_POST["mail"]; 
     $pass = $_POST["password"];
     $cpass = $_POST["cpassword"];
