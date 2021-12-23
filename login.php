@@ -1,7 +1,7 @@
 <?php
 $showError = false;
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    include "partials/_dbconnect.php";
+    include "_dbconnect.php";
     $mail = $_POST["mail"];
     $pass = $_POST["password"];
     $sql = "SELECT * FROM `iusers` WHERE `user_mail` = '$mail'";
